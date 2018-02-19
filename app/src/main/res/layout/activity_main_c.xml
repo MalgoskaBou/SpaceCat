@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/rocketBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:src="@drawable/space_cat_bck"
+        android:adjustViewBounds="true"/>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/secondAppTheme">
+
+        <TextView
+            android:id="@+id/textLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:fontFamily="@font/boldlogo"
+            android:text="@string/space_cat"
+            android:textAlignment="center"
+            android:textColor="@color/mainOrange"
+            android:textSize="30sp"
+            app:layout_constraintDimensionRatio="h,10:2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textLogoSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_black"
+            android:text="@string/space_travel_agency"
+            android:textAlignment="center"
+            android:textColor="@color/mainGreyDark"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="@+id/textLogo"
+            app:layout_constraintStart_toStartOf="@+id/textLogo"
+            app:layout_constraintTop_toBottomOf="@+id/textLogo"
+            />
+
+        <ImageView
+            android:id="@+id/placeholderIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin"
+            app:layout_constraintStart_toStartOf="@+id/textLogo"
+            app:layout_constraintTop_toBottomOf="@+id/textLogoSmall"
+            app:srcCompat="@drawable/placeholder" />
+
+        <ImageView
+            android:id="@+id/phoneIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@+id/placeholderIcon"
+            app:layout_constraintTop_toBottomOf="@+id/placeholderIcon"
+            app:srcCompat="@drawable/phone" />
+
+        <ImageView
+            android:id="@+id/emailIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@+id/phoneIcon"
+            app:layout_constraintTop_toBottomOf="@+id/phoneIcon"
+            app:srcCompat="@drawable/email" />
+
+        <TextView
+            android:id="@+id/addres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin"
+            android:fontFamily="@font/roboto_black"
+            android:text="@string/adres"
+            app:layout_constraintBottom_toTopOf="@+id/phoneIcon"
+            app:layout_constraintStart_toEndOf="@+id/placeholderIcon"
+            app:layout_constraintTop_toTopOf="@+id/placeholderIcon" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin"
+            android:fontFamily="@font/roboto_black"
+            android:text="@string/phone_num"
+            app:layout_constraintBottom_toTopOf="@+id/emailIcon"
+            app:layout_constraintStart_toEndOf="@+id/phoneIcon"
+            app:layout_constraintTop_toTopOf="@+id/phoneIcon" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin"
+            android:fontFamily="@font/roboto_black"
+            android:text="@string/mail_adres"
+            app:layout_constraintBottom_toBottomOf="@+id/emailIcon"
+            app:layout_constraintStart_toEndOf="@+id/emailIcon"
+            app:layout_constraintTop_toTopOf="@+id/emailIcon" />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

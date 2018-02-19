@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Space Cat</string>
+    <string name="image">Image</string>
+    <string name="space_cat">SPACE CAT</string>
+    <string name="space_travel_agency">SPACE TRAVEL AGENCY</string>
+    <string name="adres">Saturn Street\n48 Area 51</string>
+    <string name="phone_num">555 666 000</string>
+    <string name="mail_adres">catOffice@gmoon.com</string>
+</resources>
